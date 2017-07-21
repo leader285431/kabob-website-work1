@@ -2,6 +2,7 @@
 
 ## 學習如何架設網站
 
+<<<<<<< HEAD
 1. UI(前期規劃與配置)
   1. Function Map
     網站企劃(資訊架構/系統區塊/導覽/文案)
@@ -48,3 +49,36 @@ http://coastal.stnsvn.com/
 
 
 ps 定義網站的目的
+=======
+1. UI
+
+    1. Function Map
+      網站企劃_架構/區塊/文案
+
+          目前想到網站上能放的區塊有
+          自介/作品集/經歷/聯絡資訊
+
+    2. UI Flow
+      使用情境動線
+
+    3. Wireframe
+       大致雛形
+
+    4. Prototype 
+        畫面的底定
+
+2. Frontend
+
+    1. 框架抉擇
+
+    2. 整理資源
+
+3. Backend
+    1. 資料庫結構
+
+    2. 伺服器/網址
+
+4. 參考網站
+
+    http://coastal.stnsvn.com/
+>>>>>>> f68df7663cc7183eb0067ac9aa7170f78da8eaf3
