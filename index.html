@@ -8,6 +8,103 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
+	<div class="wrapper">
+
+		<!-- header start -->
+		<div class="header-bg"></div>
+		<header class="header">
+			<nav class="navbar header__navbar header__navbar-top">
+				<div class="navbar-brand">
+					<div class="navbar-burger header__navbar-burger" data-target="navMenu_Top">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+
+				<div class="navbar-menu header__navbar-top__menu" id="navMenu_Top">
+					
+					<a href="#" class="navbar-item header__navbar-top__nav-item is-size-4">Facebook</a>
+					<a href="#" class="navbar-item header__navbar-top__nav-item is-size-4">Instagram</a>
+					<a href="#" class="navbar-item header__navbar-top__nav-item is-size-4">Twitter</a>
+					<a href="#" class="navbar-item header__navbar-top__nav-item is-size-4">Pinterest</a>
+					<a href="#" class="navbar-item header__navbar-top__nav-item is-size-4">Team</a>
+				
+				</div>
+				<hr class="navbar__hr-line">
+			</nav>
+		</header>
+		<!-- header start -->
+
+		<section class="main">
+			<div class="container">
+				<nav class="navbar header__navbar-logo-container header__navbar">
+					<div class="navbar-brand header__navbar-logo-container">
+						<a href="#" class="navbar-item is-size-2 header__navbar-logo">G.S Studio</a>
+					</div>
+				</nav>
+			<nav class="navbar header__navbar header__navbar-main">
+				<div class="navbar-brand">
+					<div class="navbar-burger header__navbar-burger" data-target="navMenu-main">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="navbar-menu header__navbar-main__menu" id="navMenu-main">
+					<a href="#" class="navbar-item header__navbar-main__nav-item">PORTFOLIO</a>
+					<a href="#" class="navbar-item header__navbar-main__nav-item">ABOUT</a>
+					<a href="#" class="navbar-item header__navbar-main__nav-item">BLOG</a>
+					<a href="#" class="navbar-item header__navbar-main__nav-item">SHOP</a>
+					<a href="#" class="navbar-item header__navbar-main__nav-item">CONTACT</a>
+				</div>
+			</nav>
+			</div>
+		</section>
+
+
+		<!-- Portfolio start -->
+		<section class="section portfolio">
+			<div class="container">
+				<h3 class="title portfolio__title is-size-3 has-text-centered">Portfolio</h3>
+
+				<h5 class="subtitle portfolio__subtitle is-size-5 has-text-centered">DISPLAY YOUR LATEST WORK IN A BEAUTIFUL, DYNAMIC PHOTO STREAM</h5>
+
+			</div>
+		</section>
+		<!-- Portfolio End -->
+
+
+		<section></section>
+		<footer></footer>
+	</div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+		  // Get all "navbar-burger" elements
+		  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		  // Check if there are any nav burgers
+		  if ($navbarBurgers.length > 0) {
+
+		    // Add a click event on each of them
+		    $navbarBurgers.forEach(function ($el) {
+		      $el.addEventListener('click', () => {
+
+		        // Get the target from the "data-target" attribute
+		        var target = $el.dataset.target;
+		        var $target = document.getElementById(target);
+
+		        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+		        $el.classList.toggle('is-active');
+		        $target.classList.toggle('is-active');
+
+		      });
+		    });
+		  }
+
+		});
+	</script>
 </body>
 </html>
