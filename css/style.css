@@ -6613,7 +6613,45 @@ body {
   height: 400px; }
 
 .benefit.section {
-  background-color: #f0f5f9; }
+  background-color: #f0f5f9;
+  height: 80vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .fillform.section {
-  background-color: #FFF; }
+  background-color: #FFF;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.footer.section {
+  background-color: #edf4f4; }
+
+.footer.section .column > form {
+  margin-bottom: 1.5em; }
+
+.footer.section .field.is-grouped.is-grouped-centered > .button:not(:last-child) {
+  margin-right: 1em; }
+
+.footer__hr {
+  height: 2px;
+  border: solid 1.5px rgba(41, 36, 36, 0.92);
+  margin-bottom: 1.5em; }
