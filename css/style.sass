@@ -5,14 +5,22 @@
 // import bulma
 @import "plugins/bulma/bulma.sass"
 
-//base
+// base
 *
 	position: relative
+	box-sizing: border-box
 
 body
-	box-sizing: border-box
 	width: 100%
 	height: 2000px
+
+
+// basic TITLE & SUBTITLE
+
+.shawn-setting___title.title
+
+.shawn-setting___subtitle.subtitle
+	margin-bottom: 1em
 
 //////////////////////////////
 // header
@@ -67,7 +75,7 @@ body
 	margin: 0
 	display: block
 	position: absolute
-	height: 3px
+	height: 2px
 	width: 100%
 	background-color: rgba(41, 36, 36, 0.92)
 
@@ -112,5 +120,46 @@ body
 
 .portfolio.section
 	background-color: #FFF
-	height: 100vh
+
+.portfolio__button-group.field
+	margin-top: 4em
+	margin-bottom: 4em
+
+.portfolio__button-group.field .control:not(:last-child)
+	margin-right: 2em
+
+//////////////////////////////
+// Service
+//////////////////////////////
+
+.service.section
+	background-color: #fff
+
+.service__notification.notification
+	height: 100%
+
+//////////////////////////////
+// About
+//////////////////////////////
+
+.about.section
+	background-color: #FFF
+
+.about.section .tile.is-child
+	height: 400px
+
+
+//////////////////////////////
+// Benefit
+//////////////////////////////
+
+.benefit.section
+	background-color: #f0f5f9
+
+//////////////////////////////
+// Benefit
+//////////////////////////////
+
+.fillform.section
+	background-color: #FFF
 
