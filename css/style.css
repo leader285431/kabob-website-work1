@@ -113,7 +113,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Play", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 code,
 pre {
@@ -6680,7 +6680,7 @@ body {
   margin-bottom: 1em; }
 
 .header-bg {
-  background-image: url("../images/bossfight-free-high-stock-photos-sunrise-sunset-man-woman-lake-sea-ocean-water.jpg");
+  background-image: url("../images/Eddie/Header.png");
   background-size: cover;
   background-position: center;
   position: fixed;
