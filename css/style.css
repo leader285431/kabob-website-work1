@@ -6670,7 +6670,8 @@ label.panel-block {
 * {
   position: relative;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: Abel; }
 
 body {
   width: 100%;
