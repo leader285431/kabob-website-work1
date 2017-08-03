@@ -24,4 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // navbar
+  var navChange = document.getElementById("navMenu_Top")
+  
+  document.
+
 });
