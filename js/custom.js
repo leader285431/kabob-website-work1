@@ -25,8 +25,13 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // navbar
-  var navChange = document.getElementById("navMenu_Top")
-  
-  document.
+  window.addEventListener("scroll", function(){
+    var getNavs = Array.from(document.getElementsByClassName("header__navbar"));
 
+    if (document.body.scrollTop > 80) {
+        getNavs[0].classList.add( 'navbar__js-color' )
+      } else {
+        getNavs[0].classList.remove( 'navbar__js-color' );
+      }
+  });
 });

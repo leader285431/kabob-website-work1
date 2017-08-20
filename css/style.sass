@@ -13,15 +13,12 @@
 
 body
 	width: 100%
-	height: 2000px
 
 
 // basic TITLE & SUBTITLE
 
 .shawn-setting___title.title
-
 .shawn-setting___subtitle.subtitle
-	margin-bottom: 1em
 
 //////////////////////////////
 // header
@@ -51,20 +48,23 @@ body
 	background-color: inherit
 
 .header__navbar-top
+	transition: 0.3s
 
 .header__navbar-top__menu
 	position: absolute
 	left: 50%
-	transform: translateX(-50%)
+	transform: translate(-50%)
+
+.header__navbar-top__menu.is-active
+	background-color: #FFF
 
 .header__navbar-burger
 	margin-right: auto
+	margin-left: auto
 
 .header__navbar-top__nav-item
 	color: rgba(41, 36, 36, 0.92)
-	margin-right: 44px
-
-.header__navbar-top__nav-item
+	margin-right: 2.5rem
 	letter-spacing: 0.3px
 
 .header__navbar-top__nav-item:last-child
@@ -82,8 +82,7 @@ body
 
 .navbar__js-color
 	background-color: #FFF
-	width: 80px
-
+	transition: 0.3s
 
 
 //////////////////////////////
@@ -92,33 +91,33 @@ body
 
 .main
 	height: 100vh
-	padding: 80px 0px
 	background-color: inherit
-
-.header__navbar-main
 
 .header__navbar-main__menu
 	position: absolute
 	left: 50%
-	transform: translateX(-50%)
+	transform: translate(-50%)
+	z-index: 100
 
-.header__navbar-logo-container
-	align-items: center
-	justify-content: center
-
-.header__navbar-logo
-	margin-right: auto
-	margin-left: auto
-	margin-top: 48px
-	margin-bottom: 16px
+.header__navbar-main__menu.is-active
+	background-color: #FFF
 
 .header__navbar-main__nav-item
 	color: rgba(41, 36, 36, 0.92)
-	margin-right: 44px
-	letter-spacing: 0.2px
+	margin-right: 2.5rem
+	letter-spacing: 0.3px
 
 .header__navbar-main__nav-item:last-child
 	margin-right: 0
+
+.main-heading
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
 
 //////////////////////////////
 // Portfolio
@@ -134,6 +133,10 @@ body
 .portfolio__button-group.field .control:not(:last-child)
 	margin-right: 2em
 
+.portfolio__button:hover
+	background-color: $kabob_light-green
+
+
 //////////////////////////////
 // Service
 //////////////////////////////
@@ -141,7 +144,7 @@ body
 .service.section
 	background-color: #fff
 
-.service__notification.notification
+.service__notification
 	height: 100%
 
 //////////////////////////////
@@ -161,7 +164,7 @@ body
 
 .benefit.section
 	background-color: #f0f5f9
-	height: 80vh
+	min-height: 100vh
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -176,7 +179,7 @@ body
 
 .fillform.section
 	background-color: #FFF
-	height: 100vh
+	min-height: 100vh
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
