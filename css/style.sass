@@ -9,16 +9,28 @@
 *
 	position: relative
 	box-sizing: border-box
-	font-family: Abel
 
 body
 	width: 100%
+	font-size: 16px
+
+// color //
+$boaz_header-color: #ececec
+
+$kabob_black: hsla(0, 6%, 15%, 1)
+
+$kabob_light-green: hsla(180, 27%, 94%, 1)
+$kabob_light-blue: hsla(207, 43%, 96%, 1)
+$kabob_light-yellow: hsla(49, 100%, 91%, 1)
+
+$kabob_dark-green: hsla(179, 93%, 44%, 1)
+$kabob_dark-red: hsla(345, 100%, 59%, 1)
+
+$kabob_light-grey: hsla(0, 0%, 92%, 1)
 
 
-// basic TITLE & SUBTITLE
-
-.shawn-setting___title.title
-.shawn-setting___subtitle.subtitle
+// Typography
+$family-sans-serif: Chalkboard, STSongti-TC, Abel, 微軟正黑體, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important
 
 //////////////////////////////
 // header
@@ -26,98 +38,65 @@ body
 
 
 .header-bg
-	background-image: url("../images/Eddie/Header.png")
+	background-image: url("../images/header_main.jpg")
 	background-size: cover
 	background-position: center
 	position: fixed
 	top: 0
 	left: 0
-	width: 100%
+	width: 100vw
 	height: 100vh
 
 .header
+	width: 100vw
+	background-color: inherit
+	color: $boaz_header-color
+	z-index: 100
+	h1
+		color: $boaz_header-color
+
+.header_container
+	padding: 0 15em
+
+.header_title_upside
+	display: inline-block
+	letter-spacing: 0.0125em
+	padding: 1em 0em 0.75em
+	font-size: 1.25em
+
+.header_title_upside_left, .header_title_upside_right
+	border-top: 0.25em $boaz_header-color solid
+	width: calc( ( 100% - 10em ) / 2 )
+.header_title_upside_mid
+	width: 3em
+	height: 4em
+	margin: 0 3.5em
+
+.header_title
+	letter-spacing: 0.05em
+
+.header_title_downside
+	padding: 1.25em 0em
+	border-top: 0.25em $boaz_header-color solid
+	width: 100%
+	margin: 0 auto
+	margin-top: 3em
+	font-size: 1.25em
+
+// navbar
+.hero_navbar
+	border-bottom: 0.1875em solid $kabob_black
+
+.navbar-container
+	margin: 0 8em
+	width: 100%
+
+.navbar__js-active
 	position: fixed
 	top: 0
 	left: 0
-	width: 100%
-	background-color: inherit
-	z-index: 100
-
-// navbar
-.header__navbar
-	background-color: inherit
-
-.header__navbar-top
 	transition: 0.3s
-
-.header__navbar-top__menu
-	position: absolute
-	left: 50%
-	transform: translate(-50%)
-
-.header__navbar-top__menu.is-active
-	background-color: #FFF
-
-.header__navbar-burger
-	margin-right: auto
-	margin-left: auto
-
-.header__navbar-top__nav-item
-	color: rgba(41, 36, 36, 0.92)
-	margin-right: 2.5rem
-	letter-spacing: 0.3px
-
-.header__navbar-top__nav-item:last-child
-	margin-right: 0
-
-.navbar__hr-line
-	bottom: 0
-	border: 0
-	margin: 0
-	display: block
-	position: absolute
-	height: 2px
 	width: 100%
-	background-color: rgba(41, 36, 36, 0.92)
-
-.navbar__js-color
-	background-color: #FFF
-	transition: 0.3s
-
-
-//////////////////////////////
-// Main
-//////////////////////////////
-
-.main
-	height: 100vh
-	background-color: inherit
-
-.header__navbar-main__menu
-	position: absolute
-	left: 50%
-	transform: translate(-50%)
-	z-index: 100
-
-.header__navbar-main__menu.is-active
-	background-color: #FFF
-
-.header__navbar-main__nav-item
-	color: rgba(41, 36, 36, 0.92)
-	margin-right: 2.5rem
-	letter-spacing: 0.3px
-
-.header__navbar-main__nav-item:last-child
-	margin-right: 0
-
-.main-heading
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	justify-content: center
-	align-items: center
 
 //////////////////////////////
 // Portfolio
